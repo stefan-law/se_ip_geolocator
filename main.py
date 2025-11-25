@@ -9,7 +9,7 @@ DB_FILE = "IP2LOCATION-LITE-DB11.IPV6.BIN"
 app = FastAPI()
 
 # Ensure there is enough RAM to run locally, otherwise delete shared memory mode
-database = IP2Location(os.path.join("data", DB_FILE), "SHARED_MEMORY")
+database = IP2Location(DB_FILE, "SHARED_MEMORY")
 
 
 @app.get("/location/")
