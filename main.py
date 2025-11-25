@@ -15,7 +15,7 @@ database = IP2Location(os.path.join("data", DB_FILE), "SHARED_MEMORY")
 @app.get("/location/")
 async def locate(request: Request):
     # Get client IP
-    client_host = request.client.host
+    client_host = request.headers.get("Fly-Client-IP")
 
     # Query databse for geolocation by IP
     rec = database.get_all(client_host)
