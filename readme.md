@@ -1,0 +1,2 @@
+### Running Locally
+`fastapi dev main.py --host 0.0.0.0`

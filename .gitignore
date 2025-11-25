@@ -1,3 +1,5 @@
 /.DS_Store
 /IP2LOCATION-LITE-DB11.BIN
 /venv
+/data
+__pycache__
